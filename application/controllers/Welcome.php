@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends Base_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,49 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function __construct()
     {
-        session_start();
+        parent::__construct();
     }
 
     public function index()
 	{
-	    header('index');
 		$this->load->view('welcome_message');
 	}
-
-	public function test($abc){
-	    echo("Hello World!");
-	    echo('<br>'.$abc);
-    }
-
-    public function error404(){
-
-    }
-
-    public function profile(){
-        header('profile');
-        echo $_SESSION['id']?:'null';
-    }
-
-    public function login(){
-        $_SESSION['id'] = 1;
-    }
-
-    public function logout(){
-        session_destroy();
-    }
-
-    public function api{
-        echo(
-            "{
-                [0]:{
-                    name='123',
-                    price=123,
-                },
-                [1]:{
-                    name='fff',
-                    price=333
-                }
-            }"
-        );
-    }
 }
