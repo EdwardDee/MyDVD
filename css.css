@@ -418,7 +418,7 @@ table a:link{
     width: 1280px;
     text-align: center;
     font-size: 12px;
-    border-bottom:1px #c7c7c7 solid;
+    border-top:1px #c7c7c7 solid;
 
 }
 
@@ -433,4 +433,8 @@ table a:link{
     min-height:350px;
     margin-left:50px;
 
+}
+
+#cartTable{
+    margin-top:20px;
 }

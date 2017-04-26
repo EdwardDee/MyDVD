@@ -29,7 +29,7 @@ session_start();
 				<ul>
 				<li><a href="#">Genre</a>
 				  <ul>
-                      <li><a href="genre.html">Action and Adventure</a></li>
+                      <li><a href="category.php?Type_ID=1">Action and Adventure</a></li>
                       <li><a href="category.php?Type_ID=2">Anime and Animation</a></li>
                       <li><a href="category.php?Type_ID=3">Children and Family</a></li>
                       <li><a href="category.php?Type_ID=4">Classics</a></li>
@@ -58,7 +58,7 @@ session_start();
 			</div>
 			<div class="headerLink" id="cartPullDown">
 				<ul>
-				<li><a href="cart.html">Cart</a></li>
+				<li><a href="cart.php">Cart</a></li>
 				</ul>
 			</div>
             <div class="searchingCont">
@@ -78,48 +78,47 @@ session_start();
     
     
 	<div id="container">
-
-<div class="bookInside">
-    <div class="title">Sign Up</div>
-
-    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
-        <table border="1" id="admin"  align="center">
-            <tr>
-                <td>Email</td>
-                <td><label for="email"></label>
-                    <input type="text" name="email" id="email"  size="34" /></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><label for="password"></label>
-                    <input type="password" name="password" id="password" /></td>
-            </tr>
-            <tr>
-                <td>Re-Password</td>
-                <td><label for="password"></label>
-                    <input type="password" name="password" id="password" /></td>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td><label for="name"></label>
-                    <input type="text" name="name" id="name" /></td>
-            </tr>
-            
-            <tr>
-                <td>Phone</td>
-                <td><label for="phone"></label>
-                    <input type="text" name="phone" id="phone" /></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><input type="submit" name="button" id="button" value="Insert" /></td>
-            </tr>
-        </table>
-    </form>
-</div>
-
-
-     </div>
+        <div class="title">Cart</div>
+		<form id="form1" name="form1" method="post" action="">
+            <div id="cartTable">
+            <table width="95%" border="1" id="admin" align="center">
+                <tr>
+                    <td>Title</td>
+                    <td>Format</td>
+                    <td>Price</td>
+                    <td>Delete</td>
+                </tr>
+                <tr>
+                    <td>Spotlight</td>
+                    <td>DVD</td>
+                    <td>2.99</td>
+                    <td><input type="button" name="deleteBtn" id="deleteBtn" value="Delete" onclick="location='deleteFromCart.php?isbn=<?=$row[1]?>'"/></td>
+                </tr>
+                <tr>
+                    <td>La La Land</td>
+                    <td>Blu-ray</td>
+                    <td>4.99</td>
+                    <td><input type="button" name="deleteBtn" id="deleteBtn" value="Delete" onclick="location='deleteFromCart.php?isbn=<?=$row[1]?>'"/></td>
+                </tr>
+                <tr>
+                    <td>Fantastic Beasts and Where to Find Them</td>
+                    <td>Blu-ray</td>
+                    <td>4.99</td>
+                    <td><input type="button" name="deleteBtn" id="deleteBtn" value="Delete" onclick="location='deleteFromCart.php?isbn=<?=$row[1]?>'"/></td>
+                </tr>
+                <tr><td colspan="4" height="25px;"></td></tr>
+                <tr>
+                    <td colspan="4" align="right">Total: <?=$row[1]?></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="4" align="right"><input type="button" name="button1" id="button1" value="Check Out" onclick="location='checkOutForm.php'"/></td>
+                </tr>
+                
+            </table>
+            </div>
+		</form>
+	</div>
 
 	<div class="footer">© DVD Rental 2017</div>
 </div>
