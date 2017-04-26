@@ -89,3 +89,7 @@ define('ERROR_CODE', -1);
 
 // layout
 define('LAYOUT_DASHBOARD', 0);
+
+// Movie Type
+define('DVD', 0);
+define('BLUERAY', 1);
