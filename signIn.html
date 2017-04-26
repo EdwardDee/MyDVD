@@ -80,42 +80,33 @@ session_start();
 	<div id="container">
 
 <div class="bookInside">
-    <div class="title">Sign Up</div>
-
-    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
-        <table border="1" id="admin"  align="center">
-            <tr>
-                <td>Email</td>
-                <td><label for="email"></label>
-                    <input type="text" name="email" id="email"  size="34" /></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><label for="password"></label>
-                    <input type="password" name="password" id="password" /></td>
-            </tr>
-            <tr>
-                <td>Re-Password</td>
-                <td><label for="password"></label>
-                    <input type="password" name="password" id="password" /></td>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td><label for="name"></label>
-                    <input type="text" name="name" id="name" /></td>
-            </tr>
-            
-            <tr>
-                <td>Phone</td>
-                <td><label for="phone"></label>
-                    <input type="text" name="phone" id="phone" /></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><input type="submit" name="button" id="button" value="Insert" /></td>
-            </tr>
-        </table>
-    </form>
+    <div class="title">Sign In</div>
+    <div class="login">
+        <form id="form1" name="form1" method="POST" action="">
+            <table border="1" align="center">
+                <tr>
+                    <td width="78">Account: </td>
+                    <td width="251"><label for="ac"></label>
+                        <input type="text" name="ac" id="ac" /></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><label for="pw"></label>
+                        <input type="password" name="pw" id="pw" /></td>
+                </tr>
+                <tr>
+                    <td>Captcha: </td>
+                    <td>
+                        <label for="yzmki"></label>
+                        <input type="text" name="yzmki" id="yzmki" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="loginBtn" id="loginBtn" value="Login" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </div>
 
 
