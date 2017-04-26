@@ -1,8 +1,3 @@
-<?php require_once('connection.php'); 
-session_start();
-
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,30 +12,30 @@ session_start();
 
 <div id="wrapper">
 	<div id="header">
-		<div class="logo"><a href="index.html"><img src="image/logo_v2.png"></a></div>
+		<div class="logo"><a href="index"><img src="image/logo_v2.png"></a></div>
 
 		<div id="headerLinkWrapper">
             <div class="headerLink" id="newReleasePullDown">
 				<ul>
-                    <li><a href="newRelease.html">New Releases</a></li>
+                    <li><a href="newRelease">New Releases</a></li>
 				</ul>
 			</div>
 			<div class="headerLink" id="pulldownChoose">
 				<ul>
 				<li><a href="#">Genre</a>
 				  <ul>
-                      <li><a href="genre.html">Action and Adventure</a></li>
-                      <li><a href="category.php?Type_ID=2">Anime and Animation</a></li>
-                      <li><a href="category.php?Type_ID=3">Children and Family</a></li>
-                      <li><a href="category.php?Type_ID=4">Classics</a></li>
-                      <li><a href="category.php?Type_ID=5">Comedy</a></li>
-                      <li><a href="category.php?Type_ID=6">Documentary</a></li>
-                      <li><a href="category.php?Type_ID=7">Drama</a></li>
-                      <li><a href="category.php?Type_ID=8">Horror</a></li>
-                      <li><a href="category.php?Type_ID=9">Music and Musicals</a></li>
-                      <li><a href="category.php?Type_ID=10">Romance</a></li>
-                      <li><a href="category.php?Type_ID=11">Sci-Fi and Fantasy</a></li>
-                      <li><a href="category.php?Type_ID=12">Thrillers</a></li>
+                      <li><a href="genre">Action and Adventure</a></li>
+                      <li><a href="genre">Anime and Animation</a></li>
+                      <li><a href="genre">Children and Family</a></li>
+                      <li><a href="genre">Classics</a></li>
+                      <li><a href="genre">Comedy</a></li>
+                      <li><a href="genre">Documentary</a></li>
+                      <li><a href="genre">Drama</a></li>
+                      <li><a href="genre">Horror</a></li>
+                      <li><a href="genre">Music and Musicals</a></li>
+                      <li><a href="genre">Romance</a></li>
+                      <li><a href="genre">Sci-Fi and Fantasy</a></li>
+                      <li><a href="genre">Thrillers</a></li>
 				  </ul>
 				</li>
 				</ul>
@@ -48,12 +43,12 @@ session_start();
 
 			<div class="headerLink" id="howItWorksPullDown">
 				<ul>
-                    <li><a href="howItWorks.html">How It Works</a></li>
+                    <li><a href="howItWorks">How It Works</a></li>
 				</ul>
 			</div>
 			<div class="headerLink" id="signUpPullDown">
 				<ul>
-				<li><a href="signUp.html">Sign Up</a></li>
+				<li><a href="signUp">Sign Up</a></li>
 				</ul>
 			</div>
 			<div class="headerLink" id="cartPullDown">
@@ -70,7 +65,7 @@ session_start();
             </div>
             <div class="headerLink" id="signInPullDown">
 				<ul>
-                    <li><a href="signIn.html">Sign In</a></li>
+                    <li><a href="signIn">Sign In</a></li>
 				</ul>
 			</div>
 		</div>

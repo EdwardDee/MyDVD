@@ -19,9 +19,10 @@ class Base_Controller extends CI_Controller {
         switch($layoutType)
         {
             case LAYOUT_DASHBOARD:
-                $this->load->view();
+                $this->load->view('layout/header');
                 break;
         }
+        $this->load->view('layout/nav');
     }
 
     protected  function showFooter($layoutType)
@@ -29,7 +30,7 @@ class Base_Controller extends CI_Controller {
         switch($layoutType)
         {
             case LAYOUT_DASHBOARD:
-                $this->load->view();
+                $this->load->view('layout/footer');
                 break;
         }
     }

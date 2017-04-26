@@ -88,7 +88,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 define('ERROR_CODE', -1);
 
 // layout
-define('LAYOUT_DASHBOARD', 0);
+define('LAYOUT_INDEX', 0);
 
 // Movie format
 define('DVD', 0);
