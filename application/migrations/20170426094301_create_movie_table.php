@@ -16,7 +16,7 @@ class Migration_create_movie_table extends CI_Migration
                 'type' => 'VARCHAR',
                 'constraint' => '30',
             ),
-            'type' => array(
+            'format' => array(
                 'type' => 'int',
                 'constraint' => '5',
             ),
@@ -25,14 +25,6 @@ class Migration_create_movie_table extends CI_Migration
             ),
             'runtime_end' => array(
                 'type' => 'TIMESTAMP',
-            ),
-            'director' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '255',
-            ),
-            'actor' => array(
-                'type' => 'VARCHAR',
-                'constraint' => '255',
             ),
             'info' => array(
                 'type' => 'VARCHAR',
