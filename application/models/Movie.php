@@ -10,14 +10,34 @@ class Auth extends CI_Model {
             $this->userId = ERROR_CODE;
     }
 
-    public function isLogin()
+    public function getList()
     {
-        return $this->userId > ERROR_CODE;
+        $condition = array();
+        $query = $this->db->get_where('movies', $condition);
+        return $query;
     }
 
-    public function getUserId()
+    public function getPicture($movie_id, $imageType = MOVIE_PREVIEW)
     {
-        return $this->userId;
+        $condition = array(
+            'movie_id' => $movie_id,
+            'type' => $imageType,
+        );
+
+        $query = $this->db->get_where('movie_images', $condition);
+        return $query;
+    }
+
+    public function getActor($movie_id)
+    {
+        $condition = array(
+            'movie_id' => $movie_id,
+        );
+
+        $this->db->select('actor.*');
+        $this->db->join('');
+
+        $query = $this->db->get_where('actor')
     }
 
     public function login($account, $password)
@@ -25,7 +45,7 @@ class Auth extends CI_Model {
         try{
             $this->db->where('account', $account);
             $this->db->password('password', $password);
-            $query = $this->db->get('users');
+            $query = $this->db->get('user');
             if($query->rows() > 0){
                 $user_id = $query->row()->id;
                 $this->userId = $user_id;
